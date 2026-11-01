@@ -89,6 +89,23 @@
     .guide-heading{display:flex;align-items:center;gap:4px;min-height:66px;margin:5px 0 8px}.guide-heading h2{flex:1;font-size:25px;white-space:nowrap;margin:0}.guide-heading .guide-illustration{flex:none;width:96px;height:62px;margin:0;transform:scale(.7);transform-origin:center}
     .membership-reminder{display:flex;align-items:center;gap:8px;padding:12px 10px;margin:0 0 12px;border:1px solid #f1dfd6;border-radius:14px;background:#fff8f3;color:#946747}.membership-reminder>.icon{width:19px;height:19px}.membership-reminder>div{flex:1;min-width:0}.membership-reminder strong{display:block;font-size:14px;line-height:1.5;font-weight:500}.membership-reminder span{display:block;font-size:12px;line-height:1.6;color:#af8c73}.membership-reminder button{display:flex;align-items:center;gap:2px;font-size:13px;padding:4px 0;white-space:nowrap}.membership-reminder button .icon{width:13px;height:13px}.membership-reminder button:last-child{margin-left:2px;padding:5px;color:#b59a86}
     .membership-buttons{display:flex;flex-direction:column;gap:10px;margin-top:20px}.membership-buttons .primary-button{margin-top:0}.membership-buttons .secondary-button{background:#fff;color:#424955;border-color:#e3e7ed;min-height:48px;font-size:15px}.membership-buttons .secondary-button:hover{background:#f7f8fa}.recharge-back{margin-top:10px}
+
+    /* ===== 柔和账单图形与居中断网反馈 ===== */
+    .guide-heading{justify-content:flex-start;gap:8px}.guide-heading h2{flex:none}.guide-heading .guide-illustration{width:76px;height:62px;margin:0 0 0 18px;transform:none;isolation:isolate}.guide-illustration:before{content:"";position:absolute;inset:3px -6px;background:radial-gradient(ellipse at 35% 40%,#ffd3e5b3,transparent 70%),radial-gradient(ellipse at 70% 65%,#f8a9bc80,transparent 72%);filter:blur(9px);z-index:-1}.guide-heading .guide-orbit{width:90px;height:44px;border:0;background:radial-gradient(ellipse,#f4c2da55,transparent 73%);filter:blur(6px)}.guide-orbit:before,.guide-orbit:after{display:none}.guide-heading .guide-ledger{width:37px;height:44px;border:0;border-radius:42% 58% 45% 55%;background:linear-gradient(135deg,#fff8fb88,#f8dce9aa);box-shadow:none;transform:rotate(-11deg);color:#d75b78}.guide-ledger .icon{width:27px;height:27px;stroke-width:1.6;filter:drop-shadow(0 2px 6px #e738501a)}.guide-heading .guide-sparkle{top:8px;left:57px;opacity:.65}.guide-heading .guide-sparkle .icon{width:17px;height:17px}
+    .asset-note-button{gap:5px;padding:7px 10px;color:#65758d}.asset-note-button .icon{width:17px;height:17px}
+    .toast.is-centered{top:50%;bottom:auto;transform:translate(-50%,-50%);width:max-content;max-width:calc(100% - 40px);min-width:0;padding:13px 19px}.error-inline .error-message{cursor:default;margin:0}.error-inline .error-message:hover{color:#8a94a7}
+
+    /* ===== 四类可恢复异常：轻量反馈、同步范围与保存确认 ===== */
+    .demo-options{max-height:438px;overflow-y:auto;padding:2px 4px 2px 0;scrollbar-width:thin;scrollbar-color:#d9dfe9 transparent}.demo-option{flex:none}
+    .recovery-reply{padding:3px 2px 12px;color:#5c6678;font-size:16px;line-height:1.6}.recovery-reply>span{display:block;font-size:13px;color:#9aa3b3;margin-top:4px}.recovery-reply>div{display:flex;gap:16px;margin-top:12px}.recovery-reply button{display:flex;align-items:center;gap:5px;font-size:14px;color:#bf4059;padding:5px 0}.recovery-reply button+button{color:#8792a5}.recovery-reply .icon{width:16px;height:16px}
+    .partial-warning{display:flex;align-items:center;gap:7px;color:#a67a49;font-size:14px;margin-bottom:17px}.partial-warning .icon{width:18px;height:18px}.partial-scope{font-size:14px;line-height:1.7;color:#8a97aa;margin:9px 0 16px}.partial-report .amount{margin-top:6px}.note-reply .note-save-error{font-size:14px;line-height:1.6;color:#b85c6d;margin-top:10px}
+    .generation-feedback{display:flex;align-items:center;gap:10px}.generation-feedback .analysis-status{flex:1;min-width:0;margin-bottom:0}.generation-feedback>button{flex:none;font-size:13px;color:#8b96a8;padding:6px 0}
+
+    /* ===== 同步不完整：先解释缺失范围，再展示可验证的小计 ===== */
+    .partial-explanation{font-size:16px;line-height:1.65;color:#65718a;margin:3px 2px 15px}.partial-explanation strong{font-weight:500;color:#3c495e}.partial-report .amount{font-size:32px;margin-top:9px}.partial-report .currency{font-size:21px}.partial-count{font-size:13px;color:#97a2b3;line-height:1.6;margin-top:6px}.sync-sources{padding:12px 0 13px;margin-top:15px;border-top:1px solid #edf0f5}.sync-sources>div{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:14px;line-height:1.6;color:#82918b;padding:4px 0}.sync-sources>div>span:first-child{display:flex;align-items:center;gap:7px;color:#647086}.sync-sources .icon{width:16px;height:16px}.sync-sources .sync-missing{color:#b18b63}.analysis-step.is-sync-warning .step-mark{background:#faf2e9;color:#b38c62}.partial-record-source{font-size:13px!important;color:#999!important;line-height:1.6!important;margin:0 0 16px!important}
+
+    /* ===== 网络失败：在助手回答区反馈，原问题保持正常消息样式 ===== */
+    .network-feedback{padding:2px 2px 12px;font-size:16px;line-height:1.6}.network-feedback-title{display:flex;align-items:center;gap:8px;color:#b64956}.network-feedback-title>.icon{width:19px;height:19px}.network-feedback-title strong{font-size:16px;font-weight:500}.network-feedback>p{font-size:15px;line-height:1.6;color:#7d8798;margin:5px 0 13px 27px}.network-retry{display:inline-flex;align-items:center;gap:6px;margin-left:27px;min-height:36px;padding:6px 13px;border:1px solid #dce1e9;border-radius:10px;background:#fff;color:#3e4653;font-size:14px;line-height:1.5}.network-retry>.icon{width:16px;height:16px}.network-retry:hover{background:#f0f3f8;border-color:#c8d0de}
   </style>
 </head>
 <body>
@@ -140,24 +157,29 @@
     <!-- ===== 演示控制：与手机 UI 严格分离 ===== -->
     <aside class="demo-panel" aria-label="原型演示控制">
       <p class="demo-kicker">PROTOTYPE LAB</p><h2>原型演示控制</h2>
-      <p class="demo-description">切换结果状态，体验完整流程。<br>始终保留同一个提问。</p>
+      <p class="demo-description">切换结果状态，体验完整流程。<br>保留原问题，支持重试恢复。<br>更多状态可在下方列表滚动选择。</p>
       <div class="demo-options" role="radiogroup" aria-label="回答结果模式">
         <button class="demo-option" role="radio" aria-checked="true" data-mode="auto"><span data-icon="sliders"></span>自动判断<span class="radio" aria-hidden="true"></span></button>
         <button class="demo-option" role="radio" aria-checked="false" data-mode="success" tabindex="-1"><span data-icon="circle-check"></span>成功回答<span class="radio" aria-hidden="true"></span></button>
         <button class="demo-option" role="radio" aria-checked="false" data-mode="network" tabindex="-1"><span data-icon="wifi-off"></span>网络异常<span class="radio" aria-hidden="true"></span></button>
         <button class="demo-option" role="radio" aria-checked="false" data-mode="insufficient" tabindex="-1"><span data-icon="file-search"></span>数据不足<span class="radio" aria-hidden="true"></span></button>
+        <button class="demo-option" role="radio" aria-checked="false" data-mode="partial" tabindex="-1"><span data-icon="database"></span>账单同步不完整<span class="radio" aria-hidden="true"></span></button>
         <button class="demo-option" role="radio" aria-checked="false" data-mode="membership" tabindex="-1"><span data-icon="bell"></span>会员权益即将过期<span class="radio" aria-hidden="true"></span></button>
+        <button class="demo-option" role="radio" aria-checked="false" data-mode="busy" tabindex="-1"><span data-icon="sliders"></span>服务繁忙<span class="radio" aria-hidden="true"></span></button>
       </div>
       <button class="demo-reset" data-action="reset"><span data-icon="rotate-ccw"></span>重置原型</button>
       <div class="demo-status"><i></i><span id="demo-status">当前：首次引导</span></div>
       <p class="demo-disclaimer">仅用于评审演示，<br>不属于真实产品界面。</p>
     </aside>
-    <p class="demo-footnote"><span data-icon="mouse"></span><span>在手机内滚动探索</span><br>推荐问题、明细与异常恢复均可操作。<br>所有数据仅在本地模拟。</p>
+    
   </main>
   <script>
     'use strict';
     /* ===== 统一图标系统：内联 SVG，无 CDN、无图标字体、无 emoji ===== */
     const ICONS={
+      'circle-alert':'<circle cx="12" cy="12" r="9"/><path d="M12 7v6m0 4h.01"/>',
+      'clock':'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+      'notebook-plus':'<path d="M12 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v6M7 7h7M7 11h4M7 15h3M18 14v8m-4-4h8"/>',
       'bell':'<path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/>',
       'check':'<path d="m5 12 4 4L19 6"/>',
       'chevron-left':'<path d="m14 5-7 7 7 7"/>','chevron-right':'<path d="m9 5 7 7-7 7"/>','chevron-down':'<path d="m6 9 6 6 6-6"/>',
@@ -237,7 +259,7 @@
     const GUIDE_KEY='bill-assistant-intro-v1';
     function guideAlreadySeen(){try{return localStorage.getItem(GUIDE_KEY)==='seen';}catch{return false;}}
     function rememberGuide(){try{localStorage.setItem(GUIDE_KEY,'seen');}catch{/* file:// 或隐私模式仍可完成当次体验 */}}
-    function toast(message){const el=document.getElementById('toast');el.textContent=message;el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,2600);}
+    function toast(message,{center=false}={}){const el=document.getElementById('toast');el.textContent=message;el.classList.toggle('is-centered',center);el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,2600);}
     function announce(message){document.getElementById('announcement').textContent=message;}
     function group(rows){return CATEGORIES.map(c=>({...c,cents:sum(rows.filter(b=>b.category===c.name)),count:rows.filter(b=>b.category===c.name).length})).filter(c=>c.count).sort((a,b)=>b.cents-a.cents);}
     /* ===== 资产页：共用模拟支出，独立标注的收入/收益样例 ===== */
@@ -246,7 +268,7 @@
     function loadNotes(){try{const notes=JSON.parse(localStorage.getItem(NOTES_KEY)||'[]');return Array.isArray(notes)?notes.filter(n=>n&&typeof n.name==='string'&&Number.isInteger(n.cents)&&n.cents>0).slice(0,100):[];}catch{return [];}}
     function assetMoney(cents){return state.assetHideAmounts?'<span class="privacy-mask">***</span>':money(cents);}
     function assetLedgerRow(b,note=false){return `<button class="asset-ledger-row" ${note?`data-note="${escapeHTML(b.id)}"`:`data-bill="${escapeHTML(b.id)}"`}><span class="asset-merchant-icon">${icon(note?'square-pen':CATEGORIES.find(c=>c.name===b.category)?.icon||'receipt')}</span><span><strong>${escapeHTML(b.merchant||b.name)}</strong><small>${escapeHTML(b.date.slice(5).replace('-','.'))} · ${escapeHTML(b.category)}${note?' · 本机记账':''}</small></span><b>−${assetMoney(b.cents)}</b></button>`;}
-    function assetsHTML(){const monthly=monthBills('2026-10'),expense=sum(monthly),today=monthly.filter(b=>b.date==='2026-10-31');return `<section class="assets-page"><div class="asset-overline"><span>本月资产概览</span><button data-action="toggle-amounts" aria-label="${state.assetHideAmounts?'显示金额':'隐藏金额'}">${icon(state.assetHideAmounts?'eye-off':'eye')}</button></div><div class="asset-overview-grid"><button class="asset-overview-card" data-action="asset-income"><span class="asset-card-title">本月收支${icon('chevron-right')}</span><span class="asset-cash-row"><i>支</i><b>¥${assetMoney(expense)}</b></span><span class="asset-cash-row income"><i>收</i><b>¥${assetMoney(ASSET_DEMO.monthlyIncome)}</b></span><small>结余 ¥${assetMoney(ASSET_DEMO.monthlyIncome-expense)}</small></button><button class="asset-overview-card yield-card" data-action="asset-yield"><span class="asset-card-title">收益概览${icon('chevron-right')}</span><span class="asset-yield-label">本周收益</span><strong class="metric">¥${assetMoney(ASSET_DEMO.weeklyYield)}</strong><small>收益为演示样例</small></button></div><section class="asset-ledger-card"><div class="asset-ledger-header"><div role="tablist" aria-label="资产账单类型"><button role="tab" data-asset-list="recent" aria-selected="${state.assetTab==='recent'}">最近账单</button><button role="tab" data-asset-list="notes" aria-selected="${state.assetTab==='notes'}">我的记账</button></div><button class="asset-note-button" data-action="add-note">${icon('square-pen')}记一笔</button></div>${state.assetTab==='recent'?`<div class="asset-today"><span>最近支出</span><small>今日 ¥${assetMoney(sum(today))}</small></div>${monthly.slice(0,4).map(b=>assetLedgerRow(b)).join('')}<button class="asset-more" data-action="all-bills">查看更多${icon('chevron-right')}</button>`:`<p class="asset-note-caption">本机记账 · 不计入内置模拟账单</p>${state.notes.length?state.notes.slice().reverse().map(n=>assetLedgerRow(n,true)).join(''):'<div class="asset-notes-empty">还没有记账，记下今天的第一笔吧。</div>'}`}</section><button class="asset-settings" data-action="asset-settings">${icon('sliders')}更多设置</button><p class="asset-data-caption">收支与收益均为演示数据</p></section>`;}
+    function assetsHTML(){const monthly=monthBills('2026-10'),expense=sum(monthly),today=monthly.filter(b=>b.date==='2026-10-31');return `<section class="assets-page"><div class="asset-overline"><span>本月资产概览</span><button data-action="toggle-amounts" aria-label="${state.assetHideAmounts?'显示金额':'隐藏金额'}">${icon(state.assetHideAmounts?'eye-off':'eye')}</button></div><div class="asset-overview-grid"><button class="asset-overview-card" data-action="asset-income"><span class="asset-card-title">本月收支${icon('chevron-right')}</span><span class="asset-cash-row"><i>支</i><b>¥${assetMoney(expense)}</b></span><span class="asset-cash-row income"><i>收</i><b>¥${assetMoney(ASSET_DEMO.monthlyIncome)}</b></span><small>结余 ¥${assetMoney(ASSET_DEMO.monthlyIncome-expense)}</small></button><button class="asset-overview-card yield-card" data-action="asset-yield"><span class="asset-card-title">收益概览${icon('chevron-right')}</span><span class="asset-yield-label">本周收益</span><strong class="metric">¥${assetMoney(ASSET_DEMO.weeklyYield)}</strong><small>收益为演示样例</small></button></div><section class="asset-ledger-card"><div class="asset-ledger-header"><div role="tablist" aria-label="资产账单类型"><button role="tab" data-asset-list="recent" aria-selected="${state.assetTab==='recent'}">最近账单</button><button role="tab" data-asset-list="notes" aria-selected="${state.assetTab==='notes'}">我的记账</button></div><button class="asset-note-button" data-action="add-note">${icon('notebook-plus')}记一笔</button></div>${state.assetTab==='recent'?`<div class="asset-today"><span>最近支出</span><small>今日 ¥${assetMoney(sum(today))}</small></div>${monthly.slice(0,4).map(b=>assetLedgerRow(b)).join('')}<button class="asset-more" data-action="all-bills">查看更多${icon('chevron-right')}</button>`:`<p class="asset-note-caption">本机记账 · 不计入内置模拟账单</p>${state.notes.length?state.notes.slice().reverse().map(n=>assetLedgerRow(n,true)).join(''):'<div class="asset-notes-empty">还没有记账，记下今天的第一笔吧。</div>'}`}</section><button class="asset-settings" data-action="asset-settings">${icon('sliders')}更多设置</button><p class="asset-data-caption">收支与收益均为演示数据</p></section>`;}
     function assetIncomeHTML(){const expense=sum(monthBills('2026-10'));return `<span class="source-badge">${icon('wallet')}2026 年 10 月 · 模拟收支</span><dl class="source-facts"><div><dt>支出</dt><dd>¥${money(expense)}</dd></div><div><dt>收入样例</dt><dd>¥${money(ASSET_DEMO.monthlyIncome)}</dd></div><div><dt>本月结余</dt><dd>¥${money(ASSET_DEMO.monthlyIncome-expense)}</dd></div></dl><div class="sheet-callout">支出来自助手共用的 34 笔账单。收入为独立设置的演示样例，结余按收入减支出计算。</div><button class="primary-button" data-asset-question="${FULL_QUESTION}">${icon('message')}问问本月支出</button>`;}
     function noteFormHTML(){return `<form id="note-form" class="note-form"><label>记账名称<input id="note-name" name="name" placeholder="例如：午间简餐" maxlength="40" required></label><label>金额（元）<input id="note-amount" name="amount" type="number" min="0.01" max="999999.99" step="0.01" placeholder="0.00" required></label><label>分类<select id="note-category" name="category">${CATEGORIES.map(c=>`<option>${c.name}</option>`).join('')}</select></label><label>日期<input id="note-date" name="date" type="date" value="2026-10-31" required></label><p class="note-help">仅保存在本机，不修改内置模拟账单的金额。</p><button class="primary-button" type="submit">保存记账</button></form>`;}
     function assetBillHTML(b,note=false){return `<span class="source-badge">${icon(note?'square-pen':'receipt')}${note?'本机记账':'模拟账单'}</span><h3>${escapeHTML(b.merchant||b.name)}</h3><div class="asset-bill-amount metric">−¥${money(b.cents)}</div><dl class="source-facts"><div><dt>日期</dt><dd>${escapeHTML(b.date)}</dd></div><div><dt>分类</dt><dd>${escapeHTML(b.category)}</dd></div><div><dt>来源</dt><dd>${note?'本机手动记账':escapeHTML(b.channel)+'（模拟）'}</dd></div></dl>${note?'<div class="sheet-callout">这笔本机记账不参与助手内置账单的统计。</div>':`<button class="primary-button" data-asset-question="这个月${b.category}花了多少？">${icon('message')}问问这类支出</button>`}`;}
@@ -258,14 +280,14 @@
     function loadHistory(){try{const rows=JSON.parse(localStorage.getItem(HISTORY_KEY)||'[]');return Array.isArray(rows)?rows.filter(c=>c&&typeof c.id==='string'&&Array.isArray(c.turns)).slice(0,20):[];}catch{return [];}}
     function saveCurrent(){
       if(!state.turns.length)return;
-      const turns=state.turns.slice(-30).map(t=>({id:t.id,question:t.question,status:t.status,noteDraft:t.noteDraft||null,noteSaved:Boolean(t.noteSaved),membershipReminder:Boolean(t.membershipReminder),membershipDismissed:Boolean(t.membershipDismissed),feedback:t.feedback||null,saved:Boolean(t.saved),duration:t.finishedAt?Math.max(0,t.finishedAt-t.startedAt):0,attachments:(t.attachments||[]).map(a=>({id:a.id,name:a.name,type:a.type,size:a.size,url:a.url}))}));
+      const turns=state.turns.slice(-30).map(t=>({id:t.id,question:t.question,status:t.status,noteId:t.noteId||null,noteError:t.noteError||null,noteDraft:t.noteDraft||null,noteSaved:Boolean(t.noteSaved),membershipReminder:Boolean(t.membershipReminder),membershipDismissed:Boolean(t.membershipDismissed),feedback:t.feedback||null,saved:Boolean(t.saved),duration:t.finishedAt?Math.max(0,t.finishedAt-t.startedAt):0,attachments:(t.attachments||[]).map(a=>({id:a.id,name:a.name,type:a.type,size:a.size,url:a.url}))}));
       const entry={id:state.currentId,title:state.turns[0].question,updatedAt:Date.now(),turns};state.history=[entry,...state.history.filter(c=>c.id!==entry.id)].slice(0,20);
       try{localStorage.setItem(HISTORY_KEY,JSON.stringify(state.history,(key,value)=>key==='url'?undefined:value));}catch{/* 存储不可用时仍可在当前页面切换历史 */}
     }
     function restoreConversation(id,turnId=null){
       if(state.loading)cancelGeneration();saveCurrent();const entry=state.history.find(c=>c.id===id);if(!entry)return;
       state.token++;clearTimers();state.mode='auto';state.loading=false;state.closed=false;state.page='assistant';document.getElementById('screen').classList.remove('app-closed');document.getElementById('assistant-closed').hidden=true;
-      state.currentId=entry.id;state.attachments=[];state.turns=entry.turns.filter(t=>typeof t.question==='string').map(t=>({...t,id:typeof t.id==='string'?t.id:newId(),question:t.question.slice(0,160),analysis:analyze(t.question.slice(0,160)),status:['success','network','insufficient','cancelled','note'].includes(t.status)?t.status:'cancelled',analysisStage:t.status==='success'?3:1,startedAt:0,finishedAt:t.duration||0,attachments:(t.attachments||[]).map(a=>({id:String(a.id||newId()),name:String(a.name||'本地附件').slice(0,255),type:String(a.type||''),size:Number(a.size)||0,url:typeof a.url==='string'&&a.url.startsWith('blob:')?a.url:undefined})),expanded:false}));
+      state.currentId=entry.id;state.attachments=[];state.turns=entry.turns.filter(t=>typeof t.question==='string').map(t=>({...t,id:typeof t.id==='string'?t.id:newId(),question:t.question.slice(0,160),analysis:t.status==='partial'?partialAnalysis(analyze(t.question.slice(0,160))):analyze(t.question.slice(0,160)),noteSaving:false,status:['success','network','insufficient','cancelled','note','partial','busy'].includes(t.status)?t.status:'cancelled',analysisStage:t.status==='success'?3:1,startedAt:0,finishedAt:t.duration||0,attachments:(t.attachments||[]).map(a=>({id:String(a.id||newId()),name:String(a.name||'本地附件').slice(0,255),type:String(a.type||''),size:Number(a.size)||0,url:typeof a.url==='string'&&a.url.startsWith('blob:')?a.url:undefined})),expanded:false}));
       closeSheet(false);input.value='';resizeInput();render();requestAnimationFrame(()=>{const target=turnId?scrollEl.querySelector(`[data-turn-id="${CSS.escape(turnId)}"]`):null;if(target)target.scrollIntoView({block:'start',behavior:'smooth'});else scrollEl.scrollTop=scrollEl.scrollHeight;});announce('已恢复历史对话');
     }
     function historyHTML(){
@@ -328,18 +350,30 @@
       return `共 <strong>${a.rows.length} 笔</strong>支出。${a.category||a.excludeSocial||a.dayScope?`最大一笔 <strong>¥${money(a.largest.cents)}</strong>。`:'社保缴费是本月的主要支出。'}`;
     }
     function categoriesHTML(a){const groups=a.groups.slice(0,3);return `<h3>支出分布<span>${a.groups.length} 个分类</span></h3><div class="stacked-bar" role="img" aria-label="${escapeHTML(a.groups.map(c=>`${c.name} ${(c.cents/a.total*100).toFixed(2)}%`).join('，'))}">${a.groups.map(c=>`<i style="width:${c.cents/a.total*100}%;background:${c.color}"></i>`).join('')}</div>${groups.map(c=>`<div class="category-row"><i class="dot" style="background:${c.color}"></i><span class="category-name">${c.name}</span><span class="category-value">${money(c.cents)}</span><span class="category-percent">${(c.cents/a.total*100).toFixed(1)}%</span></div>`).join('')}`;}
-    function analysisStatusHTML(turn){const loading=turn.status==='loading',stage=turn.analysisStage||0;const titles=['正在确认查询范围','正在汇总账单','正在校验统计结果'];return `<button class="analysis-status ${loading?'is-loading':''}" data-action="analysis" aria-label="查看分析记录">${loading?'<span class="spinner" aria-hidden="true"></span>':icon('circle-check')}<span>${loading?titles[Math.min(stage,2)]:`已完成分析 · ${turn.analysis.rows.length} 笔账单`}</span><span class="analysis-link">${loading?`${Math.min(stage+1,3)} / 3`:'分析记录'}</span>${icon('chevron-right')}</button>`;}
+    function analysisStatusHTML(turn){if(turn.status==='loading'&&['network','busy'].includes(state.mode))return '<div class="analysis-status is-loading"><span class="spinner" aria-hidden="true"></span><span>正在连接账单服务</span></div>';const loading=turn.status==='loading',stage=turn.analysisStage||0;const titles=['正在确认查询范围','正在汇总账单','正在校验统计结果'];return `<button class="analysis-status ${loading?'is-loading':''}" data-action="analysis" aria-label="查看分析记录">${loading?'<span class="spinner" aria-hidden="true"></span>':icon('circle-check')}<span>${loading?titles[Math.min(stage,2)]:turn.status==='partial'?`已核对部分账单 · ${turn.analysis.rows.length} 笔`:`已完成分析 · ${turn.analysis.rows.length} 笔账单`}</span><span class="analysis-link">${loading?`${Math.min(stage+1,3)} / 3`:'分析记录'}</span>${icon('chevron-right')}</button>`;}
     function membershipReminderHTML(turn){return turn.membershipReminder&&!turn.membershipDismissed?`<aside class="membership-reminder" aria-label="会员到期提醒">${icon('bell')}<div><strong>会员权益即将到期</strong><span>剩余 3 天 · 演示提醒</span></div><button data-action="membership-details">查看权益${icon('chevron-right')}</button><button data-action="dismiss-membership" aria-label="关闭会员提醒">${icon('x')}</button></aside>`:'';}
-    function membershipHTML(){return `<h3>会员权益剩余 3 天</h3><p>到期前可继续使用当前权益。到期后仍可查询账单、查看历史对话和进行基础记账。</p><dl class="source-facts"><div><dt>当前权益</dt><dd>多周期对比、完整分析记录</dd></div></dl><div class="membership-buttons"><button class="primary-button" data-action="membership-recharge">去充值</button><button class="secondary-button" data-action="close-sheet">知道了，继续使用</button></div>`;}
-    function rechargeHTML(){return `<span class="source-badge">充值演示</span><h3>续费会员权益</h3><p>延长 30 天会员权益，继续使用多周期对比和完整分析记录。</p><button class="primary-button" data-action="complete-recharge">模拟充值完成</button><button class="secondary-button recharge-back" data-action="membership-details">返回会员权益</button>`;}
+    function membershipHTML(){return `<h3>会员权益剩余 3 天</h3><p>到期前可继续使用当前权益。到期后仍可查询账单、查看历史对话和进行基础记账。</p><dl class="source-facts"><div><dt>当前权益</dt><dd>多周期对比、完整分析记录</dd></div><div><dt>专属报告</dt><dd>月度消费报告</dd></div></dl><div class="membership-buttons"><button class="primary-button" data-action="membership-recharge">去充值</button><button class="secondary-button" data-action="close-sheet">知道了，继续使用</button></div>`;}
+    function rechargeHTML(){return `<span class="source-badge">充值演示</span><h3>续费会员权益</h3><p>延长 30 天会员权益，继续使用多周期对比、完整分析记录和专属月度消费报告。</p><button class="primary-button" data-action="complete-recharge">模拟充值完成</button><button class="secondary-button recharge-back" data-action="membership-details">返回会员权益</button>`;}
     function reportHTML(turn,index){
       const a=turn.analysis,pct=a.change===null?'—':`${a.change>=0?'+':''}${a.change.toFixed(1)}%`,comparable=a.month==='2026-10'&&!a.dayScope;
       const period=a.dayScope?a.period:`2026 年 ${monthLabel(a.month)}`;
       return `${analysisStatusHTML(turn)}${membershipReminderHTML(turn)}<article class="report"><div class="report-summary"><div class="report-heading"><span class="amount-label">${reportTitle(a)}</span><span class="report-period">${period}</span></div><div class="amount metric"><span class="currency">¥</span>${money(a.total)}</div><div class="report-metrics"><span>${a.rows.length} 笔支出</span>${comparable?`<span class="change">${icon('chart')}较上月 ${pct}</span>`:'<span>已完成交易</span>'}</div>${comparable?`<p class="report-comparison">上月 ¥${money(a.previous)}</p>`:''}</div>${a.trend&&comparable?`<section class="report-section"><h3>两个月，看清变化<span>单位：元</span></h3><div class="trend-chart" role="img" aria-label="9 月支出 ${money(a.previous)} 元，10 月支出 ${money(a.total)} 元"><div class="trend-column"><b>${money(a.previous)}</b><i style="height:${Math.max(3,a.previous/Math.max(a.total,a.previous)*92)}px;background:#f4c2cf"></i><span>9 月</span></div><div class="trend-column"><b>${money(a.total)}</b><i style="height:${Math.max(3,a.total/Math.max(a.total,a.previous)*92)}px;background:#e73850"></i><span>10 月</span></div></div></section>`:''}<section class="report-section">${categoriesHTML(a,turn.expanded)}</section><button class="detail-button" data-action="details">${icon('receipt')}查看全部分类与明细${icon('chevron-right')}</button></article>${responseActionsHTML(turn)}${followupHTML(turn)}`;
     }
+    function partialAnalysis(a){const rows=a.rows.filter(b=>b.channel==='支付宝');return {...a,rows,total:sum(rows),groups:group(rows),largest:rows.slice().sort((x,y)=>y.cents-x.cents)[0],partial:true};}
+    function partialHTML(turn){const a=turn.analysis;return `${analysisStatusHTML(turn)}<div class="partial-explanation"><p>这次只查到了支付宝账单。银行卡账单暂未同步，<strong>还不能确认这段时间的全部支出。</strong></p></div><article class="report partial-report"><div class="report-summary"><div class="report-heading"><span class="amount-label">支付宝支出小计</span><span class="report-period">${escapeHTML(a.period)}</span></div><div class="amount metric"><span class="currency">¥</span>${money(a.total)}</div><p class="partial-count">${a.rows.length} 笔支出 · 不含银行卡账单</p><div class="sync-sources"><div><span>${icon('check')}支付宝</span><span>已读取</span></div><div class="sync-missing"><span>${icon('wifi-off')}银行卡</span><span>未同步</span></div></div><button class="secondary-button" data-action="resync">${icon('rotate-ccw')}重新同步并继续分析</button></div><button class="detail-button" data-action="details">${icon('receipt')}查看这 ${a.rows.length} 笔支出${icon('chevron-right')}</button></article>`;}
+    function partialRecordHTML(turn){const a=turn.analysis;const steps=[
+      {title:'确认查询范围',detail:`统计周期：2026 年 ${a.period}。${a.category?'筛选'+a.category+'。':a.excludeSocial?'排除社保缴费。':''}`},
+      {title:'检查账单同步结果',detail:`已读取支付宝 ${a.rows.length} 笔支出；银行卡账单同步未完成，未纳入本次统计。`,warning:true},
+      {title:'核对已读取账单',detail:`明细合计 ¥${money(a.total)}，分类合计 ¥${money(a.groups.reduce((n,c)=>n+c.cents,0))}，核对一致。该金额仅为支付宝支出小计。`},
+      {title:'暂不生成完整结论',detail:'由于缺少银行卡账单，本次不生成全部支出结论和环比变化。重新同步完成后，可继续分析。'}
+    ];return `<div class="analysis-caption">已核对可用数据 · 账单尚未同步完整</div><div class="analysis-timeline">${steps.map(step=>`<section class="analysis-step ${step.warning?'is-sync-warning':'is-complete'}"><span class="step-mark">${icon(step.warning?'wifi-off':'check')}</span><div class="step-copy"><h3>${step.title}</h3><p>${step.detail}</p></div></section>`).join('')}</div><p class="partial-record-source">数据来源：内置模拟账单<br>可用数据更新时间：2026.10.31 09:41</p><button class="secondary-button" data-action="analysis-details">${icon('receipt')}核对 ${a.rows.length} 笔已读取明细</button>`;}
+
+    function recoveryHTML(turn){return `<div class="recovery-reply"><p>助手暂时无法响应，请稍后重试。</p><span>原问题已保留。</span><div><button data-action="retry">${icon('rotate-ccw')}稍后重试</button></div></div>`;}
+
     function insufficientHTML(turn){const fileOnly=turn.attachments?.length&&!turn.analysis.valid;return `<div class="insufficient-reply"><p>${fileOnly?'附件已经添加。这个原型可以预览图片和文件，暂不识别其中的账单金额。':turn.analysis.unsupported?'这个问题暂时无法直接回答。当前支持查询支出、分类汇总和月度变化。':'目前可使用的账单覆盖 2026 年 9—10 月，还不足以完成这次查询。'}</p><p class="insufficient-options-label">我可以先帮你：</p><div class="insufficient-options"><button data-recovery-question="${FULL_QUESTION}">查看 10 月总支出${icon('arrow-right')}</button><button data-recovery-question="和上个月比，支出有什么变化？">对比 9 月与 10 月${icon('arrow-right')}</button><button data-action="attach">添加图片或文件${icon('plus')}</button></div></div>${responseActionsHTML(turn)}`;}
-    function errorHTML(turn){const stopped=turn.status==='cancelled';return `<div class="error-inline"><button class="error-message" data-action="analysis" aria-label="查看未完成的分析记录">${icon(stopped?'stop':'wifi-off')}<span>${stopped?'已停止生成，问题已保留':'连接失败，请检查网络设置'}</span>${icon('chevron-right')}</button></div>`;}
-    function turnHTML(turn,index){const failed=['network','cancelled'].includes(turn.status);return `<section class="turn ${failed?'is-failure':''}" data-turn="${index}" data-turn-id="${escapeHTML(turn.id||String(index))}"><div class="user-message">${failed?`<button class="message-retry" data-action="retry" aria-label="重新生成" title="重新生成">${icon('rotate-ccw')}</button>`:''}<div class="user-bubble">${escapeHTML(turn.question)}${turn.attachments?.length?`<div class="sent-attachments">${turn.attachments.map(a=>attachmentHTML(a,true)).join('')}</div>`:''}</div></div><div class="turn-response" id="response-${index}">${turn.status==='loading'?analysisStatusHTML(turn):turn.status==='success'?reportHTML(turn,index):turn.status==='insufficient'?insufficientHTML(turn):turn.status==='note'?noteReplyHTML(turn):errorHTML(turn)}</div></section>`;}
+    function errorHTML(turn){if(turn.status==='network')return `<div class="network-feedback" role="status"><div class="network-feedback-title">${icon('circle-alert')}<strong>网络连接出现问题</strong></div><p>请检查网络连接，然后重试。</p><button class="network-retry" data-action="retry">${icon('rotate-ccw')}重试</button></div>`;return `<div class="error-inline"><p class="error-message">${icon('stop')}<span>已停止生成，问题已保留</span></p></div>`;}
+
+    function turnHTML(turn,index){const failed=turn.status==='cancelled';return `<section class="turn ${failed?'is-failure':''}" data-turn="${index}" data-turn-id="${escapeHTML(turn.id||String(index))}"><div class="user-message">${failed?`<button class="message-retry" data-action="retry" aria-label="重新生成" title="重新生成">${icon('rotate-ccw')}</button>`:''}<div class="user-bubble">${escapeHTML(turn.question)}${turn.attachments?.length?`<div class="sent-attachments">${turn.attachments.map(a=>attachmentHTML(a,true)).join('')}</div>`:''}</div></div><div class="turn-response" id="response-${index}">${turn.status==='loading'?`<div class="generation-feedback">${analysisStatusHTML(turn)}<button data-action="stop-generation">停止生成</button></div>`:turn.status==='success'?reportHTML(turn,index):turn.status==='partial'?partialHTML(turn):turn.status==='busy'?recoveryHTML(turn):turn.status==='insufficient'?insufficientHTML(turn):turn.status==='note'?noteReplyHTML(turn):errorHTML(turn)}</div></section>`;}
     function parseNote(question){
       const match=question.match(/(\d+(?:\.\d{1,2})?)\s*(?:元|块|人民币)/);if(!match)return null;
       const cents=Math.round(Number(match[1])*100);if(!Number.isSafeInteger(cents)||cents<=0||cents>99999999)return null;
@@ -347,7 +381,18 @@
       const category=/餐|饭|咖啡|早餐|面包/.test(name)?'餐饮美食':/车|交通|地铁/.test(name)?'交通出行':/购物|超市|百货/.test(name)?'购物消费':/药|医疗|挂号/.test(name)?'医疗健康':'其他支出';
       return {name:name.slice(0,40),cents,category,date:/昨天/.test(question)?'2026-10-30':'2026-10-31'};
     }
-    function noteReplyHTML(turn){const n=turn.noteDraft;return `<div class="note-reply">${n?`<p>${turn.noteSaved?'已经记好了，可在资产页的“我的记账”中查看。':'这笔支出整理好了，请确认：'}</p><div class="note-confirm"><strong>${escapeHTML(n.name)}<b>¥${money(n.cents)}</b></strong><span>${n.date} · ${n.category}</span></div>${turn.noteSaved?'':`<button class="primary-button" data-action="confirm-note">确认记账</button>`}<small>仅保存在本机，不计入内置模拟账单。</small>`:'<p>可以，告诉我这笔钱的用途和金额吧。</p><p class="note-example">例如：“今天午餐花了 28 元”。</p>'}</div>`;}
+    function noteReplyHTML(turn){const n=turn.noteDraft;return `<div class="note-reply">${n?`<p>${turn.noteSaved?'已经记好了，可在资产页的“我的记账”中查看。':turn.noteError?'这笔账尚未保存，信息已为你保留。':'这笔支出整理好了，请确认：'}</p><div class="note-confirm"><strong>${escapeHTML(n.name)}<b>¥${money(n.cents)}</b></strong><span>${n.date} · ${n.category}</span></div>${turn.noteSaved?'':`${turn.noteError?`<p class="note-save-error">${escapeHTML(turn.noteError)}</p>`:''}<button class="primary-button" data-action="confirm-note" ${turn.noteSaving?'disabled':''}>${turn.noteSaving?'正在保存…':turn.noteError?'重新保存':'确认记账'}</button>`}<small>仅保存在本机，不计入内置模拟账单。</small>`:'<p>可以，告诉我这笔钱的用途和金额吧。</p><p class="note-example">例如：“今天午餐花了 28 元”。</p>'}</div>`;}
+    function persistNote(turn){
+      if(!turn?.noteDraft||turn.noteSaved||turn.noteSaving)return;
+      turn.noteSaving=true;turn.noteError=null;turn.noteId=turn.noteId||newId();
+      const refresh=()=>{const i=state.turns.indexOf(turn);if(i>=0){refreshTurn(i);saveCurrent();}};refresh();
+      setTimeout(()=>{try{
+        
+        const next=state.notes.some(n=>n.id===turn.noteId)?state.notes:[...state.notes,{...turn.noteDraft,id:turn.noteId}].slice(-100);
+        localStorage.setItem(NOTES_KEY,JSON.stringify(next));state.notes=next;turn.noteSaved=true;announce('已保存到我的记账');
+      }catch{turn.noteError='本机存储不可用，请检查浏览器存储设置后重试。';announce('尚未保存，记账信息已保留');}
+      finally{turn.noteSaving=false;refresh();}},500);
+    }
     /* ===== 首次体验两步指引：清晰遮罩 + 局部高亮 ===== */
     function showTour(step){
       const target=document.querySelector(step===0?'.question-list':'.composer');const screen=document.getElementById('screen');if(!target){closeSheet();return;}
@@ -358,8 +403,9 @@
     }
     function refreshTurn(index){const old=scrollEl.querySelector(`[data-turn="${index}"]`);if(!old)return;const top=scrollEl.scrollTop;old.outerHTML=turnHTML(state.turns[index],index);scrollEl.scrollTop=top;}
     function render(){scrollEl.innerHTML=state.page==='assets'?assetsHTML():state.turns.length?`<div class="conversation"><p class="conversation-date">今天 · 09:41</p>${state.turns.map(turnHTML).join('')}</div>`:welcomeHTML();renderDraftAttachments();updateComposer();updateDemoStatus();updatePageTabs();}
-    function updateDemoStatus(){const last=state.turns.at(-1),labels={loading:'正在生成',success:'成功回答',network:'网络异常',insufficient:'数据不足',cancelled:'已停止生成',note:'记账对话'};document.getElementById('demo-status').textContent=`当前：${last?(last.status==='success'&&last.membershipReminder?'会员权益即将过期':labels[last.status]):'首次引导'}`;document.querySelectorAll('[data-mode]').forEach(b=>{const selected=b.dataset.mode===state.mode;b.setAttribute('aria-checked',String(selected));b.tabIndex=selected?0:-1;});}
-    function updateComposer(){const hasText=Boolean(input.value.trim())||state.attachments.length>0,active=state.loading||hasText;sendButton.disabled=false;sendButton.innerHTML=icon(state.loading?'stop':hasText?'arrow-up':'voice');sendButton.classList.toggle('has-content',active);sendButton.setAttribute('aria-label',state.loading?'停止生成':hasText?'发送问题':'语音输入（演示）');input.disabled=state.loading;input.placeholder=state.loading?'正在分析账单…':state.page==='assets'?'聊聊账单或收支吧…':'发消息或按住说话…';}
+    function updateDemoStatus(){const last=state.turns.at(-1),labels={partial:'账单同步不完整',busy:'服务繁忙',loading:'正在生成',success:'成功回答',network:'网络异常',insufficient:'数据不足',cancelled:'已停止生成',note:'记账对话'};document.getElementById('demo-status').textContent=`当前：${last?(last.status==='success'&&last.membershipReminder?'会员权益即将过期':labels[last.status]):'首次引导'}`;document.querySelectorAll('[data-mode]').forEach(b=>{const selected=b.dataset.mode===state.mode;b.setAttribute('aria-checked',String(selected));b.tabIndex=selected?0:-1;});}
+    function updateComposer(){const hasText=Boolean(input.value.trim())||state.attachments.length>0;sendButton.disabled=false;sendButton.innerHTML=icon(hasText&&!state.loading?'arrow-up':'voice');sendButton.classList.toggle('has-content',hasText&&!state.loading);sendButton.setAttribute('aria-label',hasText&&!state.loading?'发送问题':'语音输入（演示）');input.disabled=state.loading;input.placeholder=state.loading?'正在分析账单…':state.page==='assets'?'聊聊账单或收支吧…':'发消息或按住说话…';}
+
     function resizeInput(){input.style.height='40px';input.style.height=Math.min(96,Math.max(40,input.scrollHeight))+'px';}
     function clearTimers(){state.timers.forEach(clearTimeout);state.timers=[];}
     function cancelGeneration(){if(!state.loading)return;state.token++;clearTimers();state.loading=false;const turn=state.turns.at(-1);turn.status='cancelled';turn.finishedAt=performance.now();refreshTurn(state.turns.length-1);refreshAnalysisSheet();updateComposer();updateDemoStatus();saveCurrent();announce('已停止生成');}
@@ -367,20 +413,20 @@
     function startQuestion(question,{replace=false}={}){
       question=question.trim().slice(0,160);if(!question&&state.attachments.length)question='请帮我看看这些附件';if(!question)return;if(state.loading){toast('正在生成，可点击停止后再提问');return;}
       const isNote=/记一笔|记账|记笔/.test(question)||state.turns.at(-1)?.status==='note'&&!state.turns.at(-1)?.noteSaved&&Boolean(parseNote(question));
-      state.page='assistant';closeSheet(false);const a=analyze(question),turn={question,status:'loading',analysis:a,analysisStage:0,startedAt:performance.now(),finishedAt:null,expanded:false,id:newId(),noteDraft:isNote?parseNote(question):null,membershipReminder:state.mode==='membership',membershipDismissed:false,attachments:state.attachments.slice(),feedback:null,saved:false};
+      state.page='assistant';closeSheet(false);const a=analyze(question),turn={question,status:'loading',analysis:a,analysisStage:0,startedAt:performance.now(),finishedAt:null,expanded:false,id:newId(),noteSaving:false,noteSaveAttempts:0,noteDraft:isNote?parseNote(question):null,membershipReminder:state.mode==='membership',membershipDismissed:false,attachments:state.attachments.slice(),feedback:null,saved:false};
       if(replace&&state.turns.length)state.turns[state.turns.length-1]=turn;else state.turns.push(turn);
       state.attachments=[];state.loading=true;const token=++state.token;input.value='';resizeInput();render();const index=state.turns.length-1;saveCurrent();
       requestAnimationFrame(()=>{const target=scrollEl.querySelector(`[data-turn="${index}"]`);scrollEl.scrollTop=target.offsetTop-scrollEl.offsetTop-16;});
       announce('正在确认查询范围');
-      const updateStage=stage=>{if(token!==state.token)return;turn.analysisStage=stage;const response=document.getElementById(`response-${index}`);if(response)response.innerHTML=analysisStatusHTML(turn);refreshAnalysisSheet();};
+      const updateStage=stage=>{if(token!==state.token)return;turn.analysisStage=stage;const response=document.getElementById(`response-${index}`);if(response)response.innerHTML=`<div class="generation-feedback">${analysisStatusHTML(turn)}<button data-action="stop-generation">停止生成</button></div>`;refreshAnalysisSheet();};
       state.timers.push(setTimeout(()=>updateStage(1),500));
       state.timers.push(setTimeout(()=>updateStage(2),1050));
       state.timers.push(setTimeout(()=>{
-        if(token!==state.token)return;state.loading=false;clearTimers();turn.finishedAt=performance.now();
-        turn.status=state.mode==='network'?'network':isNote?'note':state.mode==='insufficient'?'insufficient':a.valid?'success':'insufficient';turn.analysisStage=turn.status==='success'?3:1;
+        if(token!==state.token)return;clearTimers();state.loading=false;turn.finishedAt=performance.now();
+        turn.status=state.mode==='network'?'network':state.mode==='busy'?'busy':isNote?'note':state.mode==='partial'&&a.valid?'partial':state.mode==='insufficient'?'insufficient':a.valid?'success':'insufficient';if(turn.status==='partial')turn.analysis=partialAnalysis(a);turn.analysisStage=turn.status==='success'?3:1;
         refreshTurn(index);refreshAnalysisSheet();updateComposer();updateDemoStatus();saveCurrent();
         if(turn.status==='success')announce(`分析完成，${reportTitle(a)} ${money(a.total)} 元，${a.rows.length} 笔账单`);
-        else if(turn.status==='note')announce('助手已回复记账请求');else if(turn.status==='network'){toast('连接失败，请检查网络设置');announce('连接失败，问题已保留');}else announce('当前数据不足，已提供其他可查询方案');
+        else if(turn.status==='partial')announce('仅汇总已同步的支付宝账单，银行卡同步失败');else if(turn.status==='busy')announce('助手暂时无法响应，可稍后重试');else if(turn.status==='note')announce('助手已回复记账请求');else if(turn.status==='network'){toast('连接失败，请检查网络设置',{center:true});announce('连接失败，问题已保留');}else announce('当前数据不足，已提供其他可查询方案');
       },1750));
     }
 
@@ -394,6 +440,7 @@
     function menuHTML(){return `<div class="app-menu"><button data-action="new-chat">${icon('message-plus')}新建对话${icon('chevron-right')}</button><button data-action="source">${icon('database')}数据使用说明${icon('chevron-right')}</button></div>`;}
     function voiceHTML(){return `<span class="source-badge">${icon('voice')}语音输入 · 演示态</span><h3>用一句话，问问账单</h3><p>此原型用示例展示语音转文字的结果，不调用麦克风，也不上传录音。</p><div class="sheet-callout">“${FULL_QUESTION}”</div><button class="primary-button" data-action="voice-sample">填入示例问题${icon('arrow-right')}</button>`;}
     function analysisRecordHTML(turn){
+      if(turn.status==='partial')return partialRecordHTML(turn);
       const a=turn.analysis,success=turn.status==='success',loading=turn.status==='loading',network=turn.status==='network',cancelled=turn.status==='cancelled',stage=turn.analysisStage||0;
       const phase=i=>success?'complete':loading?(i<stage?'complete':i===stage?'active':'pending'):i===0?'complete':i===1&&!cancelled?'failed':'pending';
       const scopeText=success?`统计周期：${a.periodText}。${a.category?'仅统计'+a.category+'。':a.excludeSocial?'已排除社保缴费。':''}`:'确认问题中的时间和分类，现有样例覆盖 2026 年 9—10 月。';
@@ -456,7 +503,9 @@
         case 'guide-start':if(!document.getElementById('guide-agreement')?.checked){toast('请先勾选数据使用说明');break;}rememberGuide();closeSheet(false);showTour(0);break;
         case 'tour-next':showTour(1);break;
         case 'tour-done':closeSheet();updateDemoStatus();announce('已开始体验');break;
-        case 'confirm-note':if(turn?.noteDraft&&!turn.noteSaved){state.notes.push({...turn.noteDraft,id:newId()});turn.noteSaved=true;try{localStorage.setItem(NOTES_KEY,JSON.stringify(state.notes));}catch{}refreshTurn(index);saveCurrent();announce('已记入我的记账');}break;
+        case 'confirm-note':persistNote(turn);break;
+        case 'stop-generation':cancelGeneration();break;
+        case 'resync':state.mode='auto';startQuestion(turn.question,{replace:true});break;
         case 'skip-guide':rememberGuide();closeSheet();updateDemoStatus();break;
         case 'available-question':state.mode='auto';startQuestion(FULL_QUESTION,{replace:true});break;
         case 'attach':openSheet('attach');break;
@@ -465,7 +514,7 @@
         case 'choose-file':document.getElementById('file-input').click();break;
         case 'voice-sample':closeSheet();input.value=FULL_QUESTION;resizeInput();updateComposer();input.focus({preventScroll:true});announce('示例语音已转成文字，可发送问题');break;
         case 'close-sheet':if(state.returnToGuide){state.returnToGuide=false;showGuide();}else{closeSheet();}break;
-        case 'analysis':openSheet('analysis',turn);break;
+        case 'analysis':if(turn?.status==='busy')break;if(turn?.status==='network'){toast('连接失败，请检查网络设置',{center:true});break;}openSheet('analysis',turn);break;
         case 'analysis-details':{const context=state.sheetContext;openSheet('details',context.analysis);break;}
         case 'details':openSheet('details',turn.analysis);break;
         case 'all-bills':openSheet('details');break;
@@ -475,7 +524,7 @@
           // 保留旧轮次上下文，从选中的失败问题重试；网络演示首次失败后可恢复成功。
           if(state.loading){toast('正在生成，请稍候');break;}
           if(index!==state.turns.length-1){state.turns.push({...turn});}
-          const recovery=turn.status==='network';if(recovery){state.mode='auto';}
+          const recovery=['network','busy','cancelled'].includes(turn.status);if(recovery){state.mode='auto';}
           startQuestion(turn.question,{replace:true});break;
         }
         case 'edit':state.mode='auto';updateDemoStatus();input.value=turn.question;resizeInput();updateComposer();input.focus({preventScroll:true});input.setSelectionRange(0,input.value.length);toast('修改后发送，即可继续查询');break;
@@ -493,10 +542,10 @@
       if(state.loading)cancelGeneration();state.mode=mode;updateDemoStatus();
       if(mode==='auto'&&!state.turns.length){toast('将根据问题与可用账单判断结果');return;}
       // 强制成功对不受支持的问题不伪造答案：明确提示后用示例问题演示。
-      let q=question;if(['success','membership'].includes(mode)&&!analyze(q).valid){q=FULL_QUESTION;toast('该问题无可用数据，使用本月支出示例演示成功态');}
+      let q=question;if(['success','membership','partial'].includes(mode)&&!analyze(q).valid){q=FULL_QUESTION;toast('该问题无可用数据，使用本月支出示例演示成功态');}
       startQuestion(q,{replace:Boolean(state.turns.length)});
     }
-    document.getElementById('composer').addEventListener('submit',event=>{event.preventDefault();if(state.loading){cancelGeneration();return;}if(!input.value.trim()&&!state.attachments.length){openSheet('voice');return;}startQuestion(input.value);});
+    document.getElementById('composer').addEventListener('submit',event=>{event.preventDefault();if(state.loading){openSheet('voice');return;}if(!input.value.trim()&&!state.attachments.length){openSheet('voice');return;}startQuestion(input.value);});
     input.addEventListener('input',()=>{resizeInput();updateComposer();});
     input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey&&!event.isComposing){event.preventDefault();startQuestion(input.value);}});
     sheetLayer.addEventListener('click',event=>{if(event.target===sheetLayer)closeSheet();});
